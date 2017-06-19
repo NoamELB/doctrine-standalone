@@ -1,0 +1,6 @@
+dist/index.js
+index.cjs.js
+index.es.js
+.DS_Store
+.vscode
+node_modules

@@ -1,0 +1,37 @@
+{
+  "name": "doctrine-standalone",
+  "version": "1.0.0",
+  "description": "A standalone version of Doctrine JSDoc parser, to work in a browser.",
+  "main": "index.cjs.js",
+  "module": "index.es.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js -i node_modules/doctrine/lib/doctrine.js  -o index.cjs.js -f cjs && rollup -c rollup.config.js -i node_modules/doctrine/lib/doctrine.js  -o index.es.js -f es && rollup -c rollup.config.js -i node_modules/doctrine/lib/doctrine.js  -o dist/index.js -f iife -n doctrine",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoamELB/doctrine-standalone.git"
+  },
+  "keywords": [
+    "doctrine",
+    "JSDoc",
+    "client",
+    "standalone"
+  ],
+  "author": "https://github.com/NoamELB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NoamELB/doctrine-standalone/issues"
+  },
+  "homepage": "https://github.com/NoamELB/doctrine-standalone#readme",
+  "dependencies": {
+    "babel-preset-es2015-rollup": "~3.0.0",
+    "doctrine": "~2.0.0",
+    "rollup-plugin-babel": "~2.7.1",
+    "rollup-plugin-commonjs": "~8.0.2",
+    "rollup-plugin-json": "~2.3.0",
+    "rollup-plugin-node-builtins": "~2.1.2",
+    "rollup-plugin-node-globals": "~1.1.0",
+    "rollup-plugin-node-resolve": "~3.0.0"
+  }
+}
